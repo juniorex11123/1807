@@ -38,7 +38,7 @@
 ## 🔧 UPRAWNIENIA PLIKÓW:
 
 ### Uprawnienia 755 (executable):
-- Wszystkie pliki `.cgi`
+- Wszystkie pliki `.py3`
 - Folder `static/`
 
 ### Uprawnienia 644 (readable):
