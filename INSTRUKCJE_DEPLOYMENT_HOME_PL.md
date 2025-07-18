@@ -50,8 +50,10 @@ Wszystkie pliki zostały przygotowane i są gotowe do skopiowania na hosting hom
 
 ### 3. Pierwsza inicjalizacja:
 1. Otwórz przeglądarkę
-2. Idź do: `https://TWOJA-DOMENA.home.pl/init.cgi`
-3. Jeśli widzisz komunikat "Database initialized successfully" - GOTOWE!
+2. Przetestuj CGI: `https://TWOJA-DOMENA.home.pl/test.py3`
+3. Jeśli test działa, uruchom: `https://TWOJA-DOMENA.home.pl/init_simple.py3`
+4. Alternatywnie: `https://TWOJA-DOMENA.home.pl/init.py3`
+5. Jeśli widzisz komunikat "Database initialized successfully" - GOTOWE!
 
 ### 4. Test aplikacji:
 1. Otwórz: `https://TWOJA-DOMENA.home.pl/`
