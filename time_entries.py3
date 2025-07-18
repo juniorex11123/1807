@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Time Entries endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/time_entries.py3

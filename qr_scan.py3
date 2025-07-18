@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 QR Scan endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/qr_scan.py3

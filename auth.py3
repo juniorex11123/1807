@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Authentication module for TimeTracker Pro
 Compatible with home.pl CGI hosting

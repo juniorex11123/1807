@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 QR Generate endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/qr_generate.py3?employee_id=123

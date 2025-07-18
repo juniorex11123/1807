@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Database module for TimeTracker Pro - SQLite support
 Compatible with home.pl CGI hosting

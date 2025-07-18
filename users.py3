@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Users endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/users.py3

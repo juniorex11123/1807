@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Utility functions for TimeTracker Pro CGI
 Compatible with home.pl CGI hosting

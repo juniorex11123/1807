@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Database initialization endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/init.py3

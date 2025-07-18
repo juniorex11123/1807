@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Companies endpoint for TimeTracker Pro
 URL: https://timetrackerpro.pl/companies.py3
