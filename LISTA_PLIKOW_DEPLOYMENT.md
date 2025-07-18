@@ -61,8 +61,9 @@
 
 - **NIE ZAPOMNIJ** o pliku `.htaccess` - bez niego aplikacja nie będzie działać!
 - **Folder `static/`** musi być skopiowany kompletnie ze wszystkimi podfolderami
-- **Pliki `.cgi`** muszą mieć uprawnienia executable (755)
-- **Pierwszym krokiem** po wdrożeniu jest uruchomienie `init.cgi`
+- **Pliki `.py3`** muszą mieć uprawnienia executable (755)
+- **Pierwszym krokiem** po wdrożeniu jest uruchomienie `test.py3`, potem `init_simple.py3`
+- **Jeśli masz problemy** - użyj plików z końcówką `_simple.py3` (init_simple.py3, login_simple.py3)
 
 ## 📊 PODSUMOWANIE:
 
