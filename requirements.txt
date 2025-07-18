@@ -1,0 +1,23 @@
+# Requirements for TimeTracker Pro CGI deployment on home.pl
+# Install these packages on home.pl hosting:
+
+bcrypt==4.3.0
+PyJWT==2.10.1
+qrcode==8.2
+pillow==11.3.0
+
+# Standard library modules used:
+# - sqlite3 (built-in)
+# - json (built-in)
+# - os (built-in)
+# - sys (built-in)
+# - datetime (built-in)
+# - typing (built-in)
+# - uuid (built-in)
+# - io (built-in)
+# - base64 (built-in)
+
+# Notes for home.pl:
+# - Python 3.6+ required
+# - All above packages should be available or installable
+# - If packages are missing, contact home.pl support
