@@ -1,8 +1,8 @@
-# TimeTracker Pro - CGI Configuration for home.pl
+# TimeTracker Pro - home.pl Configuration
 RewriteEngine On
 
 # Enable CGI execution for Python files
-AddHandler cgi-script .py3 .py
+AddHandler cgi-script .py3
 Options +ExecCGI
 
 # Allow .py3 files to be executed
@@ -11,22 +11,9 @@ Options +ExecCGI
     Options +ExecCGI
 </Files>
 
-# Allow .py files to be executed  
-<Files "*.py">
-    SetHandler cgi-script
-    Options +ExecCGI
-</Files>
-
-# CORS headers for API endpoints
-<Files "*.py3">
-    Header always set Access-Control-Allow-Origin "*"
-    Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
-    Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
-</Files>
-
-# React Router support
+# React Router support - let .py3 files pass through
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-d  
 RewriteCond %{REQUEST_URI} !^/.*\.py3$
 RewriteCond %{REQUEST_URI} !^/static/
 RewriteRule ^(.*)$ /index.html [L]
@@ -36,6 +23,6 @@ Header always set X-Content-Type-Options nosniff
 Header always set X-Frame-Options DENY
 Header always set X-XSS-Protection "1; mode=block"
 
-# Force HTTPS
+# Force HTTPS if not already
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
