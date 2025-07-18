@@ -67,7 +67,7 @@
 
 ## 📊 PODSUMOWANIE:
 
-**Liczba plików do skopiowania**: ~19 plików + folder static/
+**Liczba plików do skopiowania**: ~22 plików + folder static/
 **Całkowity rozmiar**: ~3MB
 **Czas wdrożenia**: 5-10 minut
 **Wymagania**: hosting home.pl z Python 3
