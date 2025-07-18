@@ -51,6 +51,9 @@ class TimeTrackerHandler(http.server.SimpleHTTPRequestHandler):
         # Serve static files
         elif path.startswith('/static/'):
             super().do_GET()
+        # Serve specific HTML files
+        elif path.endswith('.html'):
+            self.serve_html_file(path[1:])  # Remove leading slash
         else:
             # For any other path, serve index.html (SPA routing)
             self.serve_index()
