@@ -8,19 +8,22 @@
 - `timetracker_pro.db` - Baza danych SQLite
 - `asset-manifest.json` - Manifest aplikacji
 
-### 2. Pliki CGI (Backend - rozszerzenie .cgi):
-- `api.cgi` - API główne
-- `auth.cgi` - Uwierzytelnianie
-- `companies.cgi` - Zarządzanie firmami
-- `database.cgi` - Operacje bazodanowe
-- `employees.cgi` - Zarządzanie pracownikami
-- `init.cgi` - Inicjalizacja systemu (URUCHOM TO PIERWSZE!)
-- `login.cgi` - Logowanie użytkowników
-- `qr_generate.cgi` - Generowanie QR kodów
-- `qr_scan.cgi` - Skanowanie QR kodów
-- `time_entries.cgi` - Ewidencja czasu
-- `users.cgi` - Zarządzanie użytkownikami
-- `utils.cgi` - Funkcje pomocnicze
+### 2. Pliki CGI (Backend - rozszerzenie .py3):
+- `api.py3` - API główne
+- `auth.py3` - Uwierzytelnianie
+- `companies.py3` - Zarządzanie firmami
+- `database.py3` - Operacje bazodanowe
+- `employees.py3` - Zarządzanie pracownikami
+- `init.py3` - Inicjalizacja systemu (URUCHOM TO PIERWSZE!)
+- `init_simple.py3` - Alternatywna inicjalizacja (jeśli init.py3 nie działa)
+- `login.py3` - Logowanie użytkowników
+- `login_simple.py3` - Alternatywne logowanie (jeśli login.py3 nie działa)
+- `qr_generate.py3` - Generowanie QR kodów
+- `qr_scan.py3` - Skanowanie QR kodów
+- `time_entries.py3` - Ewidencja czasu
+- `users.py3` - Zarządzanie użytkownikami
+- `utils.py3` - Funkcje pomocnicze
+- `test.py3` - Plik testowy CGI
 
 ### 3. Pliki pomocnicze Python:
 - `auth.py` - Moduł uwierzytelniania
