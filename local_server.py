@@ -93,6 +93,20 @@ class TimeTrackerHandler(http.server.SimpleHTTPRequestHandler):
         except FileNotFoundError:
             self.send_error_response("Index file not found", 404)
 
+    def serve_html_file(self, filename):
+        """Serve a specific HTML file"""
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.add_cors_headers()
+            self.end_headers()
+            self.wfile.write(content.encode('utf-8'))
+        except FileNotFoundError:
+            self.send_error_response(f"File {filename} not found", 404)
+
     def handle_api_request(self, method, path, body):
         """Handle API requests"""
         try:
