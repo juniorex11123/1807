@@ -72,28 +72,37 @@ Po inicjalizacji dostępne są:
 
 ## 🔍 ROZWIĄZYWANIE PROBLEMÓW:
 
+### Problem: "Forbidden" przy próbie uruchomienia .py3
+**Rozwiązanie:**
+1. Sprawdź czy pliki `.py3` mają uprawnienia 755 (executable)
+2. Sprawdź czy plik `.htaccess` jest wgrany w katalogu głównym
+3. Sprawdź czy home.pl obsługuje Python 3 - skontaktuj się z supportem
+4. Przetestuj najpierw `test.py3` - jeśli działa, problem z kodem
+
 ### Problem: Pliki CGI nie działają
 **Rozwiązanie:**
-1. Sprawdź czy pliki `.cgi` mają uprawnienia 755
-2. Sprawdź czy plik `.htaccess` został wgrany
-3. Upewnij się, że home.pl obsługuje Python 3
+1. Upewnij się, że pliki mają rozszerzenie `.py3` (nie `.cgi`)
+2. Sprawdź shebang: `#!/usr/bin/python3`
+3. Sprawdź czy wszystkie pliki pomocnicze (auth.py, database.py, utils.py) są wgrane
+4. Sprawdź czy wymagane moduły są zainstalowane (bcrypt, PyJWT, qrcode)
 
 ### Problem: Błąd CORS
 **Rozwiązanie:**
 - Upewnij się, że plik `.htaccess` jest w katalogu głównym
-- Sprawdź czy wszystkie pliki CGI mają prawidłowe nagłówki CORS
+- Sprawdź czy wszystkie pliki .py3 mają prawidłowe nagłówki CORS
 
-### Problem: Nie można się zalogować
+### Problem: Nie można się zalogować / błędne dane
 **Rozwiązanie:**
-1. Najpierw uruchom `init.cgi` aby stworzyć bazę danych
+1. Najpierw uruchom `init_simple.py3` lub `init.py3` aby stworzyć bazę danych
 2. Użyj domyślnych kont: `owner/owner123`
-3. Sprawdź czy `timetracker_pro.db` został utworzony
+3. Sprawdź czy plik `timetracker_pro.db` został utworzony
+4. Sprawdź czy wszystkie moduły Python są dostępne
 
-### Problem: Strona nie ładuje się
+### Problem: Brak modułów Python
 **Rozwiązanie:**
-1. Sprawdź czy `index.html` jest w katalogu głównym
-2. Sprawdź czy folder `static/` został skopiowany kompletnie
-3. Sprawdź czy plik `.htaccess` jest wgrany
+1. Sprawdź plik `requirements.txt` - potrzebne: bcrypt, PyJWT, qrcode, pillow
+2. Skontaktuj się z supportem home.pl o instalację pakietów
+3. Niektóre moduły mogą być już zainstalowane domyślnie
 
 ## 🎯 FUNKCJONALNOŚCI SYSTEMU:
 
