@@ -5,7 +5,7 @@ Test script for TimeTracker Pro API
 import requests
 import json
 
-BASE_URL = "http://localhost:8000/api"
+BASE_URL = "http://localhost:8080/api"
 
 def test_api():
     print("🧪 Testing TimeTracker Pro API...")
