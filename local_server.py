@@ -250,7 +250,7 @@ class TimeTrackerHandler(http.server.SimpleHTTPRequestHandler):
         print(f"[{self.address_string()}] {format % args}")
 
 def main():
-    PORT = 8000
+    PORT = 8080
     
     # Ensure database is initialized
     print("Initializing TimeTracker Pro...")
