@@ -52,9 +52,10 @@
 
 1. **Skopiuj wszystkie pliki** z listy powyżej
 2. **Ustaw uprawnienia** zgodnie z instrukcjami
-3. **Uruchom inicjalizację**: `https://TWOJA-DOMENA.home.pl/init.cgi`
-4. **Przetestuj aplikację**: `https://TWOJA-DOMENA.home.pl/`
-5. **Zaloguj się**: `owner` / `owner123`
+3. **Przetestuj CGI**: `https://TWOJA-DOMENA.home.pl/test.py3`
+4. **Uruchom inicjalizację**: `https://TWOJA-DOMENA.home.pl/init_simple.py3`
+5. **Przetestuj aplikację**: `https://TWOJA-DOMENA.home.pl/`
+6. **Zaloguj się**: `owner` / `owner123`
 
 ## ⚠️ WAŻNE UWAGI:
 
